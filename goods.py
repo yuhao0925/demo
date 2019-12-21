@@ -1,6 +1,7 @@
 # from main import app
 from flask import Blueprint
 
+
 # @app.route('/good')
 def good():
     return 'goods page'
@@ -9,7 +10,6 @@ def good():
 
 # 创建蓝图
 # good = Blueprint('goods',__name__)
-
 
 
 # @good.route('/get_goods')
