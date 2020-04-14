@@ -1,7 +1,7 @@
 from flask import Flask
-from goods import good
-from users import get_longin
-from orders import order
+from Flask框架.goods import good
+from Flask框架.users import get_longin
+from Flask框架.orders import order
 from cart import app_cart
 
 # 循环引用，解决方法，推迟一方的导入，让一方先完成
