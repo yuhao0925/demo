@@ -1,12 +1,16 @@
 from flask import Flask, make_response, request
 
+
+
 app = Flask(__name__)
+
 
 @app.route('/set_cookie')
 def set_cookie():
     aa = make_response('===set_cookie===')
     # k  V  过期时间
-    aa.set_cookie('username','python',max_age=3600)
+    # aa.set_cookie('username','python',max_age=3600)
+    aa.set_cookie('username','python')
     return aa
 
 @app.route('/get_cookie')

@@ -8,6 +8,7 @@ app = Flask(__name__)
 def index():
     my_dict = {
         "a": 100
+        # ......
     }
     my_list = [1, 2, 3, 4, 5, 6]
     my_int = 0
@@ -52,6 +53,8 @@ def demo2():
     aa.headers['yuhao'] = 'python'
     aa.status = '404'
     return aa
+
+
 
 
 if __name__ == '__main__':

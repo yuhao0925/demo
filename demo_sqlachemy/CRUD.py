@@ -37,6 +37,6 @@ db_session = select_db()  # 已经打开查询窗口
 # print(ret)
 
 # 删除数据
-ret = db_session.query(User).filter(User.id==2).delete()
+ret = db_session.query(User).filter(User.id == 2).delete()
 db_session.commit()
 db_session.close()
